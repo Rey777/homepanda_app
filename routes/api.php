@@ -13,7 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::resource('customers', CustomerAPIController::class);
-
 Route::get('customer/{id}/transactions', [App\Http\Controllers\API\CustomerAPIController::class, 'transactions']);
